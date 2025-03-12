@@ -16,7 +16,10 @@
     .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-
+}
+.active{
+  background-color: blue;
+  color: white;
 }
 </style>
 </head>
@@ -27,7 +30,10 @@
            <img class="w-[120px]" src="asst/Logo.png" alt="">
         </div>
         <div>
-            <button class="btn">Sort by view</button>
+          <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
+            <input id="search-box" type="search" required placeholder="Search"/>
+          </label>
         </div>
         <div>
             <button class="btn bg-[#FF1F3D] text-white">Blog</button>
@@ -35,13 +41,31 @@
     </nav>
     <!-- second section -->
      <nav id="btn-Categories" class="flex justify-center items-center gap-5 p-5">
-        <button class="btn btn-outline bg-[#FF1F3D] text-white">All</button>
+        <button id="btn-all" onclick="videoSection()" class="btn btn-outline hover:bg-[#FF1F3D] ">All</button>
      </nav>
      <section id="video-section" class="grid grid-cols-4 gap-3">
      
+      <div class="col-span-full flex flex-col justify-center items-center py-20">
+        <img class="w-[120px]" src="asst/Icon.png" alt="">
+        <h1 class="font-bold text-2xl text-center mt-3">Oops!! Sorry, There is no <br> content here</h1>
+      </div>
      </section>
 
-
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="video_modal" class="modal">
+  <div class="modal-box">
+   <div id="video-modal-container">
+   </div>
+    
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
 
      <script src="script/btn-Categories.js"></script>
