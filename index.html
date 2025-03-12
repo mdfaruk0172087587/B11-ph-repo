@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- du -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<!-- google font  -->
+
+<style>
+    .inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+}
+</style>
 </head>
-<body>
-    
+<body class="max-w-11/12 mx-auto inter">
+    <!-- first section -->
+    <nav class="flex justify-between items-center border-b-2 border-[#17171720] p-5">
+        <div>
+           <img class="w-[120px]" src="asst/Logo.png" alt="">
+        </div>
+        <div>
+            <button class="btn">Sort by view</button>
+        </div>
+        <div>
+            <button class="btn bg-[#FF1F3D] text-white">Blog</button>
+        </div>
+    </nav>
+    <!-- second section -->
+     <nav id="btn-Categories" class="flex justify-center items-center gap-5 p-5">
+        <button class="btn btn-outline bg-[#FF1F3D] text-white">All</button>
+     </nav>
+     <section id="video-section" class="grid grid-cols-4 gap-3">
+     
+     </section>
+
+
+
+
+     <script src="script/btn-Categories.js"></script>
 </body>
 </html>
